@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker-bs5.min.css"
+    >
+</head>
+
+<body class="px-3">
+    <h3 class="">優惠券管理</h3>
+    <form
+        action=""
+        class="searchbar row row-cols-sm-1 row-cols-md-3 row-cols-lg-4 g-3 justify-content-between"
+    >
+        <div class="col mb-3">
+            <label
+                for="FormControlInput"
+                class="form-label"
+            >優惠券名稱</label>
+            <input
+                type="coupon_name"
+                class="form-control"
+                id="FormControlInput"
+                placeholder="請輸入優惠券名稱"
+            >
+        </div>
+        <div class="col mb-3">
+            <label
+                for="FormControlInput2"
+                class="form-label"
+            >優惠券序號</label>
+            <input
+                type="coupon_sid"
+                class="form-control"
+                id="FormControlInput2"
+                placeholder="請輸入優惠券序號"
+            >
+        </div>
+        <div class="col mb-3">
+            <label
+                for="FormControlInput2"
+                class="form-label"
+            >優惠券狀態</label>
+            <select class="form-select">
+                <option selected>請選擇優惠券狀態</option>
+                <option value="1">啟用</option>
+                <option value="2">停用</option>
+                <option value="3">已失效</option>
+            </select>
+        </div>
+        <div class="col mb-3">
+            <label
+                for="startDate"
+                class="form-label"
+            >開始時間</label>
+            <div class="input-group">
+                <input
+                    type="text"
+                    class="datepicker_inputStart form-control"
+                    id=""
+                    placeholder="請選擇開始時間"
+                >
+                <i class="fa-solid fa-calendar-days input-group-text"></i>
+            </div>
+        </div>
+        <div class="col mb-3">
+            <label
+                for="endDate"
+                class="form-label"
+            >結束時間</label>
+            <div class="input-group">
+                <input
+                    type="text"
+                    class="datepicker_inputEnd form-control"
+                    id=""
+                    placeholder="請選擇結束時間"
+                >
+                <i class="fa-solid fa-calendar-days input-group-text"></i>
+            </div>
+        </div>
+        <div class="align-">
+            <button
+                type="button"
+                class="btn btn-primary"
+            >搜尋</button>
+            <button
+                type="button"
+                class="btn btn-dark"
+            >清除</button>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
+
+    <!-- 日期的script -->
+    <script>
+        const inputStart = document.querySelector(".datepicker_inputStart");
+        const inputEnd = document.querySelector(".datepicker_inputEnd");
+
+        const datepickerStart = new Datepicker(inputStart, {
+            'format': 'yyyy-mm-dd',
+            title: '選擇日期'
+        })
+        const datepickerEnd = new Datepicker(inputEnd, {
+            'format': 'yyyy-mm-dd',
+            title: '選擇日期'
+        })
+    </script>
+</body>
+
+</html>

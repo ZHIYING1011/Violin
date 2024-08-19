@@ -1,0 +1,24 @@
+:root {
+    --aside-width: 240px;
+    --top-width: 72px;
+    --main-color: #4E73DE;
+}
+.brand {
+    width: 239px;
+    background: var(--main-color);
+}
+.left-aside {
+    width: var(--aside-width);
+    padding-top: var(--top-width);
+    background: var(--main-color);
+}
+.main-content {
+    margin: var(--top-width) 0 0 var(--aside-width);
+    /* 上右下左 */
+}
+.main {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
