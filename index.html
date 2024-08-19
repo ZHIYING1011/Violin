@@ -34,8 +34,7 @@
 <script>
     function ToExecute(folder, name) {
         let page = document.getElementById("changeIF")
-        page.src = `./${folder}/${name}.html`
-        // console.log("123")
+        page.src = `./${folder}/${name}.php`
     }
 </script>
 
@@ -46,12 +45,12 @@
     </header>
     <aside class="left-aside border-end vh-100 position-fixed top-0 start-0 overflow-auto">
         <ul class="list-unstyled">
-            <li onclick="ToExecute('coupon', 'coupon')">
+            <li onclick="ToExecute('coupon', 'coupon2')">
                 <a class="d-block px-3 py-2 text-decoration-none  text-white">
                     <i class="fa-solid fa-ticket me-2 fa-fw"></i>優惠券管理
                 </a>
             </li>
-            <li onclick="ToExecute('folder', 'name')">
+            <li onclick="ToExecute('user', 'user')">
                 <a class="d-block px-3 py-3 text-decoration-none text-white">
                     <i class="fa-solid fa-user-group me-2 fa-fw"></i>會員管理
                 </a>
@@ -92,7 +91,7 @@
         class="main"
         style="top:72px;left:240px;width:calc( 100vmax - 240px);height:calc( 100vmax - 72px); padding: 0 0 0 0"
         id="changeIF"
-        src="./coupon/coupon.html"
+        src="./coupon/coupon2.php"
     ></iframe>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
