@@ -2,6 +2,7 @@
     --aside-width: 240px;
     --top-width: 72px;
     --main-color: #4E73DE;
+    --secondary-color:#F8F9FC;
 }
 .brand {
     width: 239px;
@@ -14,6 +15,7 @@
 }
 .main-content {
     margin: var(--top-width) 0 0 var(--aside-width);
+    background: blue;
     /* 上右下左 */
 }
 .main {
@@ -21,4 +23,7 @@
     position: relative;
     text-align: center;
     align-items: center;
+}
+.coupon-table{
+    color: ;
 }
