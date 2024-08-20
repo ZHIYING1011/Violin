@@ -3,6 +3,8 @@
     --top-width: 72px;
     --main-color: #4E73DE;
     --secondary-color:#F8F9FC;
+    --background-color:#F6F7FA;
+    --table-color:#858796;
 }
 .brand {
     width: 239px;
@@ -24,6 +26,17 @@
     text-align: center;
     align-items: center;
 }
+.table-title{
+    background: var(--secondary-color);
+}
 .coupon-table{
-    color: ;
+    thead tr th{
+        color: var(--table-color);
+    }
+    tbody tr td{
+        color: var(--table-color);
+    }
+}
+body{
+    background: var(--background-color);
 }
